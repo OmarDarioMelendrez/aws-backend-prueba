@@ -1,12 +1,12 @@
 const express = require('express')
 const app = express()
-const port = 80
+const port = 3000
 const morgan = require('morgan')
 
 app.use(morgan('tiny'))
 
 app.get('/', (req, res) => {
-  res.send('Sigue vivo')
+  res.send('Sigue vivo pero ahora en el 3000 PAH')
 })
 
 app.listen(port, () => {
